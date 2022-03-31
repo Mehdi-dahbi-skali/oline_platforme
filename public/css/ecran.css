@@ -1,0 +1,887 @@
+a{
+    color: none;
+    text-decoration:none;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    
+    background-color: #a400f6;
+}
+
+body{
+    background-color: black;
+}
+/*start header*/
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    position: sticky;
+    height:24vh;
+    top: 0;
+    background-color:black;
+
+}
+header p {
+    color: #a400f6;
+    font-family: American Captain;
+    font-size:63px;    
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    
+}
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+header i{
+    color: #a400f6;
+    margin-right: 50px;
+    font-size: 50px;
+}
+/*end header*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    width: 100%;
+    height: calc(100vh - 24vh);
+}
+/*main content*/
+main .left {
+    width: calc(100% - 26%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .left .content{
+    width: 100%;
+    
+}
+
+.content p{
+    color: #a400f6;
+    font-family: American Captain;
+    font-size:45px;
+    border-bottom:15px solid #a400f6;
+    padding-left: 150px;
+    padding-bottom: 5px;
+}
+.poste{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 8%;
+}
+.poste .second{
+    display: flex;
+    flex-direction: column;
+}
+.poste .second p{
+    color: #a400f6;
+    font-family: Britannic;
+    font-size:35px;
+    border-bottom:0px;
+    padding: 0px;
+    margin-top: -45px;
+
+}
+.poste .second .box {
+    width: 400px;
+    height: 145px;
+    background-color:transparent;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border: 5px solid #a400f6;
+    
+    
+}
+.poste .second .desc {
+    color: #a400f6;
+    font-family: Britannic;
+    font-size:25px;
+    margin:0px;
+    margin-top: 25px;
+}
+.carre{
+   width: 15px;
+   height: 15px;
+   background-color: #a400f6;
+   margin-left: 395px;
+   border-radius:2px;
+   position: relative;
+   transform: rotate(45deg);
+}
+
+.carre::after {
+    background-color: inherit;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: inherit;
+    height:inherit;
+}
+
+.carre::before {
+    background-color: inherit;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: inherit;
+    height:inherit;
+}
+
+.circle{
+    width:50px;
+    height:50px;
+    border-radius:30px;
+    background-color:#a400f6;
+    margin-left: 200px;
+    margin-top: -45px; 
+}
+/*end content*/
+
+main .users{
+    width: 26%;
+    height:100%;
+    border-left: 15px solid #a400f6;
+    border-bottom: 15px solid #a400f6;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.users p{
+    padding-left: 35px;
+    font-family: American Captain;
+    font-size:45px;
+    color: #a400f6;
+}
+.TopUser{
+    width: 100%;
+    height: 70%;
+    overflow-x: hidden;
+    
+}
+.pr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+
+
+.TopUser .pr .circle{
+    margin-left: 30px;
+    margin-top: 0px;
+}
+.TopUser .pr p{
+    color: #a400f6;
+    font-family: Britannic;
+    font-size:35px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+/*start of product*/
+
+.product{
+    width:101%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.product p{
+    color: #a400f6;
+    font-family: American Captain;
+    font-size:45px;
+    border-bottom:15px solid #a400f6;
+    border-bottom-right-radius: 0px;
+    padding-left: 150px;
+    padding-bottom: 5px;
+}
+.product_pr{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.product_pr .contenaire{
+    width: 200px;
+    height:250px;
+    border-radius:15px;
+    background-color:#a400f6;
+    border: 5px solid #a400f6;
+    margin-left: 150px;
+}
+.product_pr .contenaire img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    width: 45%;
+    height: 100%;
+}
+.info p{
+    font-size:55px;
+    color:white;
+    font-family: American Captain;
+    border: 0px;
+    margin-left: 50px;
+    padding-left:0px;
+    margin-top:0px;
+}
+.info .description{
+    color: #a400f6;
+    font-family: Britannic;
+    font-size:25px;
+    
+}
+.buy{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.buy p{
+    font-size:55px;
+    color:white;
+    font-family: American Captain;
+    border: 0px;
+    margin-left: 50px;
+    padding-left:0px;
+    margin-top:0px;
+}
+.carre2{
+    width: 25px;
+   height: 25px;
+   background-color: #a400f6;
+   border-radius:2px;
+}
+/*end of product*/
+/*start of profile*/
+.profile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile .content{
+    margin-bottom: 55px;
+}
+.profile .first {
+    margin-left: 530px;
+    display: flex;
+    flex-direction: row;
+}
+.profile .first .circle2{
+    width:100px;
+    height:100px;
+    background-color:#a400f6;
+    border-radius: 60px;
+}
+.profile .first .create{
+    display: flex;
+    flex-direction: column;
+
+}
+.profile .first .create p{
+    color: white;
+    font-family: American Captain;
+    font-size:20px;
+    margin:0px;
+    margin-left: 50px;
+    background-color:#a400f6;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border-radius: 10px;
+    margin-bottom:30px;
+}
+
+.product2{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10%;
+}
+.product2 p{
+    color: #a400f6;
+    font-family: American Captain;
+    font-size:45px;
+    border-bottom:15px solid #a400f6;
+    border-bottom-right-radius: 10px;
+    padding-left: 150px;
+    padding-bottom: 5px;
+}
+
+
+.product_pr{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.product_pr .contenaire{
+    width: 200px;
+    height:250px;
+    border-radius:15px;
+    background-color:#a400f6;
+    border: 5px solid #a400f6;
+    margin-left: 150px;
+}
+.product_pr .contenaire img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    width: 45%;
+    height: 100%;
+}
+.info p{
+    font-size:55px;
+    color:white;
+    font-family: American Captain;
+    border: 0px;
+    margin-left: 50px;
+    padding-left:0px;
+    margin-top:0px;
+}
+.info .description{
+    color: #a400f6;
+    font-family: Britannic;
+    font-size:25px;
+    
+}
+.buy{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.buy p{
+    font-size:55px;
+    color:white;
+    font-family: American Captain;
+    border: 0px;
+    margin-left: 50px;
+    padding-left:0px;
+    margin-top:0px;
+}
+.carre2{
+    width: 25px;
+   height: 25px;
+   background-color: #a400f6;
+   border-radius:2px;
+}
+/*end of profile*/
+
+/*start of prduct only*/
+
+.product_only{
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction:row;
+}
+.poste_img{
+    width: 300px;
+    height: 350px;
+    background-color:#a400f6;
+    border-radius:20px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.poste_img img{
+    width: 100%;
+    height: 100%;
+    border-radius:20px;
+}
+
+.left_product{
+    width: 50%;
+    height: 110%;
+    display:flex;
+    flex-direction:column;
+}
+.left_product p {
+    font-size:83px;
+    font-family: American Captain;
+    color: white;
+    margin-top:0px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+.left_product .desc{
+    margin: 0px;
+    margin-left: 50px;
+    margin-top:40px;
+}
+.left_product .desc p{
+    color: #a400f6;
+    font-family: Britannic;
+    font-size:40px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
+#prix{
+    color: inherit;
+    color: #a400f6;
+    font-family: American Captain;
+    font-size: 65px;
+    margin: 0px;
+    margin-left: 50px;
+    margin-top: 115px;
+    background-color:inherit;
+    background-color:inherit;
+    padding:inherit;
+}
+
+.prr{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.prr p{
+    color: inherit;
+    color: black;
+    background-color:white;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: American Captain;
+    font-size: 60px;
+    margin: 0px;
+    margin-left: 50px;
+    margin-top: 90px;
+    border-radius: 20px;
+}
+
+/*end of product only*/
+/*start of login*/
+
+.login form{
+    width:300px;
+    height:300px;
+    background-color:transparent;
+    border: 12px solid #a400f6;
+    border-radius: 20px;
+    margin-left: 535px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.username{
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+
+}
+.username i{
+    color: #a400f6;
+    font-size:30px;
+    margin-left: 10px;
+}
+.username input{
+    border: 0px;
+    outline: none;
+    background-color:transparent;
+    border-bottom: 2px solid #a400f6;
+    width: 100%;
+    margin-left: 20px;
+    font-family: American Captain;
+    color: #a400f6;
+}
+.password{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.password i{
+    color: #a400f6;
+    font-size:30px;
+    margin-left: 10px;
+}
+.password input{
+    border: 0px;
+    outline: none;
+    background-color:transparent;
+    border-bottom: 2px solid #a400f6;
+    width: 100%;
+    margin-left: 20px;
+    font-family: American Captain;
+    color: #a400f6;
+}
+.login .error{
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: -9px;
+    font-family: American Captain;
+    color: red;
+    letter-spacing: 2px;
+}
+.login form button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #a400f6;
+    font-family: American Captain;
+    outline: none;
+    border: 0px;
+    font-size:30px;
+    margin-top: 30px;
+    margin-top: 45px;
+    margin-left: 185px;
+    cursor: pointer;
+}
+.login a {
+    background-color: #a400f6;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 17px;
+    margin-left: 10px;
+    color: #000000;
+    font-size: 20px;
+    margin-top: -40px;
+    font-family: American Captain;
+}
+
+
+/*end of login*/
+/*start of create*/
+.create form{
+    width:300px;
+    height:300px;
+    background-color:transparent;
+    border: 12px solid #a400f6;
+    border-radius: 20px;
+    margin-left: 535px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+.username{
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+
+}
+.username i{
+    color: #a400f6;
+    font-size:30px;
+    margin-left: 10px;
+}
+.username input{
+    border: 0px;
+    outline: none;
+    background-color:transparent;
+    border-bottom: 2px solid #a400f6;
+    width: 100%;
+    margin-left: 20px;
+    font-family: American Captain;
+    color: #a400f6;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+.email i{
+    color: #a400f6;
+    font-size:30px;
+    margin-left: 10px;
+}
+.email input{
+    border: 0px;
+    outline: none;
+    background-color:transparent;
+    border-bottom: 2px solid #a400f6;
+    width: 100%;
+    margin-left: 20px;
+    font-family: American Captain;
+    color: #a400f6;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.password{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.password i{
+    color: #a400f6;
+    font-size:30px;
+    margin-left: 10px;
+}
+.password input{
+    border: 0px;
+    outline: none;
+    background-color:transparent;
+    border-bottom: 2px solid #a400f6;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 100%;
+    margin-left: 20px;
+    font-family: American Captain;
+    color: #a400f6;
+}
+.create form button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #a400f6;
+    font-family: American Captain;
+    outline: none;
+    border: 0px;
+    font-size:30px;
+    margin-top: 30px;
+    margin-top: 35px;
+    margin-left: 185px;
+    cursor: pointer;
+}
+.createacc .error{
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: -21px;
+    font-family: American Captain;
+    color: red;
+    letter-spacing: 2px;
+}
+
+/*end of create*/
+/*start of create product*/
+.create_post{
+    width: 100%;
+}
+.create_post p{
+    color: #a400f6;
+    font-family: American Captain;
+    font-size:45px;
+    border-bottom:15px solid #a400f6;
+    margin-bottom: 0px;
+}
+.create_post .create{
+    margin: 0px;
+    width:100%;
+    height:100%;
+}
+.create form .title{
+    display: flex;
+    flex-direction: row;
+    margin-top: 66px;
+    margin-left: 100px;
+    justify-content: space-between;
+    width: 25%;
+    
+}
+.create form .title p{
+    border:inherit;
+    color: #a400f6;
+    margin:0px;
+}
+.create form{
+    width:inherit;
+    height:inherit;
+    border: inherit;
+    margin: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.box img{
+    width:100%;
+    height:100%;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.createacc form{
+    width:300px;
+    height:300px;
+    background-color:transparent;
+    border: 12px solid #a400f6;
+    border-radius: 20px;
+    margin-left: 535px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.createacc form button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #a400f6;
+    font-family: American Captain;
+    outline: none;
+    border: 0px;
+    font-size:30px;
+    margin-top: 30px;
+    margin-top: 35px;
+    margin-left: 185px;
+    cursor: pointer;
+}
+
+
+form .title input{
+    background-color: transparent;
+    border:3px solid #a400f6;
+    border-radius: 5px;
+    outline: none;
+    padding: 0px;
+    color: #a400f6;
+    width: 200px;
+    height: 30px;
+    margin-top: 8px;
+    font-family: American Captain;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+form .create_product {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+
+}
+form .create_product p{
+    margin: 0px;
+    border: 0px;
+    margin-right: 6px;
+}
+form .create_product textarea {
+    resize: none;
+    background-color: transparent;
+    border:2px solid #a400f6;
+    outline: none;
+    color: #a400f6;
+    font-family: American Captain;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+form .last{
+    margin-left: 100px;
+    width: 41%;
+    margin-top:45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+.create .error{
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: -21px;
+    font-family: American Captain;
+    color: red;
+    letter-spacing: 2px;
+    font-size: 30px;
+    border-bottom: inherit;
+}
+
+input[type="file"]{
+    display: none;
+}
+label{
+    background-color: white;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-bottom:6px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 10px;
+    font-family: American Captain;
+    font-size: 20px;
+    color:#a400f6;
+}
+form  .last button{
+
+    background-color: white;
+    width: 100px;
+    padding-top: 6px;
+    padding-bottom:6px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 10px;
+    font-family: American Captain;
+    font-size: 20px;
+    color:#a400f6;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: inherit;
+   
+     
+}
+
+.create form .cree_prix{
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 100px;
+    justify-content: space-between;
+    width: 25%;
+    
+}
+.create form .cree_prix p{
+    border:inherit;
+    color: #a400f6;
+    margin:0px;
+}
+form .cree_prix input{
+    background-color: transparent;
+    border:3px solid #a400f6;
+    border-radius: 5px;
+    outline: none;
+    padding: 0px;
+    color: #a400f6;
+    width: 200px;
+    height: 30px;
+    margin-top: 8px;
+    font-family: American Captain;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/*end of create post*/
+/* start of profile to visite */
+.TopUser .pr p a{
+    color: inherit;
+
+}
+.poste .second p a{
+    color: inherit;
+}
+
+/* end of profile to visite*/
